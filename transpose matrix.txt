@@ -1,0 +1,38 @@
+package Setters.cp;
+import java.util.Scanner;
+public class TransposeMatrix {
+
+	public static void main(String[] args) {
+		// program of transpose matrix
+		Scanner dev=new Scanner(System.in);
+		int a[][]=new int[2][2];
+		System.out.println("Enter number in Array"); 
+		for(int i=0;i<=1;i++)//work for row
+		{
+			for(int j=0;j<=1;j++)  //for columns
+			{
+				a[i][j]=dev.nextInt();
+			}
+		}
+		
+		System.out.println("Array matrix"); 
+		for(int i=0;i<=1;i++)//work for row
+		{
+			for(int j=0;j<=1;j++)  //for columns
+			{
+				System.out.print( a[i][j]+" ");
+			}
+			System.out.println();
+	    }
+		//Transpose matrix
+		System.out.println(" transpose matrix"); 
+		for(int i=0;i<=1;i++)//work for row
+		{
+			for(int j=0;j<=1;j++)  //for columns
+			{
+				System.out.print( a[j][i]+" ");
+			}
+			System.out.println();
+	    }
+	}
+}
